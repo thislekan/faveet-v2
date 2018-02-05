@@ -16,10 +16,10 @@
     <header>
         <div class="header__body">
             <div class="_pull-nav">
-                <span class="fa fa-bars"></span>
+                <span class="fa fa-bars" id="nav-btn"></span>
             </div>
             <div class="header__text">
-                <img src="images/contact.svg" alt="Logo">
+                <!-- <img src="images/contact.svg" alt="Logo"> -->
                 <h1>Go Digital</h1>
                 <h3>Attract. Convert. Transform</h3>
             </div>
@@ -111,30 +111,30 @@
             <h1 class="sect-header">Services</h1>
             <div class="service-nav">
                 <div class="_container">
-                    <div class="_container_tab">
+                    <div class="_container_tab SEO">
                         <img src="images/tags.svg" alt="SEO Icon">
                         <p>SEO</p>
                     </div>
-                    <div class="_container_tab">
+                    <div class="_container_tab DGMktng">
                         <img src="images/browser.svg" alt="Digital Marketing Icon">
                         <p>Digital Marketing</p>
                     </div>
-                    <div class="_container_tab">
+                    <div class="_container_tab CMngmt">
                         <img src="images/management.svg" alt="Content Management Icon">
                         <p>Content Management</p>
                     </div>
-                    <div class="_container_tab">
+                    <div class="_container_tab SMMngmt">
                         <img src="images/user.svg" alt="Social Media Management Icon">
-                        <p>S. Media Management</p>
+                        <p>S.M. Management</p>
                     </div>
-                    <div class="_container_tab">
+                    <div class="_container_tab WebDev">
                         <img src="images/web-design.svg" alt="Web Design & Development Icon">
                         <p>Web Development</p>
                     </div>
                 </div>
             </div>
             <div class="clients">
-                <div class="clients__story .seo">
+                <div class="clients__story _seo active">
                     <div class="client__logo">
                         <img src="images/bground.jpg" alt="Client Logo">
                     </div>
@@ -151,7 +151,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="clients__story .digital-mkt">
+                <!-- <div class="clients__story _digital-mkt">
                     <div class="client__logo">
                         <img src="images/faveet.svg" alt="Client Logo">
                     </div>
@@ -169,7 +169,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="clients__story .content-mgt">
+                <div class="clients__story _content-mgt">
                     <div class="client__logo">
                         <img src="images/faveet.svg" alt="Client Logo">
                     </div>
@@ -187,7 +187,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="clients__story .social-media-mgt">
+                <div class="clients__story _social-media-mgt">
                     <div class="client__logo">
                         <img src="images/faveet.svg" alt="Client Logo">
                     </div>
@@ -205,7 +205,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="clients__story .web-development">
+                <div class="clients__story _web-development">
                     <div class="client__logo">
                         <img src="images/faveet.svg" alt="Client Logo">
                     </div>
@@ -227,48 +227,43 @@
         </section>
         <section class="process">
             <h1 class="sect-header">Our Process</h1>
+            <p id="steps">Our process explained in 6 easy steps</p>
             <div class="actual-process">
                 <div class="process-1">
-                    <img src="images/1.svg" alt="process">
-                    <p class="process_description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi expedita nemo nihil et, blanditiis architecto tempore
-                        veniam dicta nulla. Magni quasi doloremque facilis quaerat architecto sapiente deleniti fugit asperiores.
-                    </p>
+                    <div class="odd">
+                        <p class="process_description">
+                            1. We strategize and identify your goals.
+                        </p>
+                    </div>
+                    <div class="even">
+                        <p class="process_description">
+                            2. We research your competition and identify your target market.
+                        </p>
+                    </div>
+                    <div class="odd">
+                        <p class="process_description">
+                            3. A prototype solution is made available.
+                        </p>
+                    </div>
+                    <div class="even">
+                        <p class="process_description">
+                            4. We review and discuss the prototype.
+                        </p>
+                    </div>
+                    <div class="odd">
+                        <p class="process_description">
+                            5. We finalize all details and review before launching
+                        </p>
+                    </div>
+                    <div class="even">
+                        <p class="process_description">
+                            6. We go live and add to the list of happy clients.
+                        </p>
+                    </div>
                 </div>
                 <div class="process-2">
-                    <img src="images/2.svg" alt="process">
-                    <p class="process_description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi expedita nemo nihil et, blanditiis architecto tempore
-                        veniam dicta nulla. Magni quasi doloremque facilis quaerat architecto sapiente deleniti fugit asperiores.
-                    </p>
-                </div>
-                <div class="process-3">
-                    <img src="images/3.svg" alt="process">
-                    <p class="process_description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi expedita nemo nihil et, blanditiis architecto tempore
-                        veniam dicta nulla. Magni quasi doloremque facilis quaerat architecto sapiente deleniti fugit asperiores.
-                    </p>
-                </div>
-                <div class="process-4">
-                    <img src="images/4.svg" alt="process">
-                    <p class="process_description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi expedita nemo nihil et, blanditiis architecto tempore
-                        veniam dicta nulla. Magni quasi doloremque facilis quaerat architecto sapiente deleniti fugit asperiores.
-                    </p>
-                </div>
-                <div class="process-5">
-                    <img src="images/5.svg" alt="process">
-                    <p class="process_description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi expedita nemo nihil et, blanditiis architecto tempore
-                        veniam dicta nulla. Magni quasi doloremque facilis quaerat architecto sapiente deleniti fugit asperiores.
-                    </p>
-                </div>
-                <div class="process-6">
-                    <img src="images/6.svg" alt="process">
-                    <p class="process_description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi expedita nemo nihil et, blanditiis architecto tempore
-                        veniam dicta nulla. Magni quasi doloremque facilis quaerat architecto sapiente deleniti fugit asperiores.
-                    </p>
+                    <img src="images/step.jpeg" alt="image">
+                    <!-- <img src="images/img2.png" alt="image"> -->
                 </div>
             </div>
         </section>
@@ -276,92 +271,116 @@
             <h1 class="sect-header">Our Team</h1>
             <div class="members">
                 <div class="member">
-                    <img src="images/faveet.svg" alt="thumbnail" class="thumb">
+                    <img src="images/bground.jpg" alt="thumbnail" class="thumb">
                     <div class="member-info">
-                        <p>
-                            <b>Name:</b> Steve Somebody
-                        </p>
-                        <p>
-                            <b>Role:</b> CTO, Emergency Developer
-                        </p>
+                        <p>Steve Somebody</p>
+                        <p>CTO, Emergency Developer</p>
+                        <div>
+                            <a href="https://twitter.com/">
+                                <span class="fa fa-twitter" style="color: #1da1f2"></span>
+                            </a>
+                            <a href="https://facebook.com/" style="color: #4267b2">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="member">
-                    <img src="images/faveet.svg" alt="thumbnail" class="thumb">
+                    <img src="images/bground.jpg" alt="thumbnail" class="thumb">
                     <div class="member-info">
-                        <p>
-                            <b>Name:</b> Steve Somebody
-                        </p>
-                        <p>
-                            <b>Role:</b> CTO, Emergency Developer
-                        </p>
+                        <p>Steve Somebody</p>
+                        <p>CTO, Emergency Developer</p>
+                        <div>
+                            <a href="https://twitter.com/">
+                                <span class="fa fa-twitter" style="color: #1da1f2"></span>
+                            </a>
+                            <a href="https://facebook.com/" style="color: #4267b2">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="member">
-                    <img src="images/faveet.svg" alt="thumbnail" class="thumb">
+                    <img src="images/bground.jpg" alt="thumbnail" class="thumb">
                     <div class="member-info">
-                        <p>
-                            <b>Name:</b> Steve Somebody
-                        </p>
-                        <p>
-                            <b>Role:</b> CTO, Emergency Developer
-                        </p>
+                        <p>Steve Somebody</p>
+                        <p>CTO, Emergency Developer</p>
+                        <div>
+                            <a href="https://twitter.com/">
+                                <span class="fa fa-twitter" style="color: #1da1f2"></span>
+                            </a>
+                            <a href="https://facebook.com/" style="color: #4267b2">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="member">
-                    <img src="images/faveet.svg" alt="thumbnail" class="thumb">
+                    <img src="images/bground.jpg" alt="thumbnail" class="thumb">
                     <div class="member-info">
-                        <p>
-                            <b>Name:</b> Steve Somebody
-                        </p>
-                        <p>
-                            <b>Role:</b> CTO, Emergency Developer
-                        </p>
+                        <p>Steve Somebody</p>
+                        <p>CTO, Emergency Developer</p>
+                        <div>
+                            <a href="https://twitter.com/">
+                                <span class="fa fa-twitter" style="color: #1da1f2"></span>
+                            </a>
+                            <a href="https://facebook.com/" style="color: #4267b2">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="member">
-                    <img src="images/faveet.svg" alt="thumbnail" class="thumb">
+                    <img src="images/bground.jpg" alt="thumbnail" class="thumb">
                     <div class="member-info">
-                        <p>
-                            <b>Name:</b> Steve Somebody
-                        </p>
-                        <p>
-                            <b>Role:</b> CTO, Emergency Developer
-                        </p>
+                        <p>Steve Somebody</p>
+                        <p>CTO, Emergency Developer</p>
+                        <div>
+                            <a href="https://twitter.com/">
+                                <span class="fa fa-twitter" style="color: #1da1f2"></span>
+                            </a>
+                            <a href="https://facebook.com/" style="color: #4267b2">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="member">
-                    <img src="images/faveet.svg" alt="thumbnail" class="thumb">
+                    <img src="images/bground.jpg" alt="thumbnail" class="thumb">
                     <div class="member-info">
-                        <p>
-                            <b>Name:</b> Steve Somebody
-                        </p>
-                        <p>
-                            <b>Role:</b> CTO, Emergency Developer
-                        </p>
+                        <p>Steve Somebody</p>
+                        <p>CTO, Emergency Developer</p>
+                        <div>
+                            <a href="https://twitter.com/">
+                                <span class="fa fa-twitter" style="color: #1da1f2"></span>
+                            </a>
+                            <a href="https://facebook.com/" style="color: #4267b2">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="map">
-            <div id="map">
-                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJY6TrkV6MOxARoCoBLiHqPqw&key=AIzaSyCpkJw5t6FRzI3ceBHFhysdWV1Uj2bj-E4"
-                    allowfullscreen></iframe>
             </div>
         </section>
         <section class="contact">
-            <img src="images/callus.svg" alt="Call Us Icon">
-            <div class="contact-us">
+            <!-- <img src="images/callus.svg" alt="Call Us Icon"> -->
+            <div>
                 <h3>Get In Touch</h3>
-                <p>Attract The Desired Audience</p>
-                <p>Convert Audience To Customers</p>
-                <p>Transform Your Business</p>
+                <p>Get A Quote, Send Us An Email</p>
+            </div>
+            <div class="details">
                 <p>
                     <span class="fa fa-envelope"></span> godoigital@faveet.org
                 </p>
                 <p>
                     <span class="fa fa-phone"></span> 090 800 9000
                 </p>
+            </div>
+        </section>
+        <section class="map">
+            <div id="map">
+                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJY6TrkV6MOxARoCoBLiHqPqw&key=AIzaSyCpkJw5t6FRzI3ceBHFhysdWV1Uj2bj-E4"
+                    allowfullscreen></iframe>
             </div>
         </section>
     </article>
@@ -378,7 +397,7 @@
                     <a href="index.html">Home</a>
                     <a href="index.html#About-us">About Us</a>
                     <a href="index.html#Services">Services</a>
-                    <a href="index.html#Contact-us">Contact Us</a>
+                    <a href="https://faveet.org/blog" target="_blank">Blog</a>
                 </div>
                 <div class="sm-media">
                     <a href="">
@@ -400,6 +419,8 @@
             <p>Block 45B Industrial Avenue, Ajegunle</p>
         </div>
     </footer>
+
+    <script src="file.js"></script>
 </body>
 
 </html>
