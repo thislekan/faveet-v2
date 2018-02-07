@@ -1,10 +1,21 @@
 const navBtn = document.getElementById('nav-btn');
 const mobileNav = document.querySelector('.nav__inside');
-const serviceNavLinks = document.querySelectorAll('._container_tab');
-const clientDetails = document.querySelectorAll('.clients__story');
 const navBar = document.querySelector('.nav-cont');
-const foo = document.getElementById('foo');
-const clientStory = document.querySelectorAll('.clients__story');
+const clientStory = document.querySelectorAll('.clients div.client-details');
+
+//For Service Icons. To be clicked in order to display client's details and project
+const digitalIcon = document.getElementById('digital-icon');
+const seoIcon = document.getElementById('seo-icon');
+const contentIcon = document.getElementById('content-icon');
+const webDevIcon = document.getElementById('webDev-icon');
+const socialMediaIcon = document.getElementById('socialMedia-icon');
+
+//For Clients Section. To display the details and project
+const seo = document.getElementById('seo');
+const digital = document.getElementById('digital');
+const content = document.getElementById('content');
+const sMedia = document.getElementById('social-media');
+const webDev = document.getElementById('web-dev');
 
 
 if (window.innerWidth <= 499) {
@@ -47,49 +58,35 @@ if (window.innerWidth >= 500) {
         });
     });
 }
-// for (let i = 0; i < serviceNavLinks.length; i++) {
-//     const element = serviceNavLinks[i];
-//     element.addEventListener('click', e => {
-//         if (e) {
-//             console.log(e.target);
-//         }
-//     })
-// }
 
-foo.addEventListener('click', () => {
-    console.log(clientStory[1]);
-    let yuu = clientStory[1];
+seoIcon.addEventListener('click', () => {
+    displayClient(seo);
+});
+digitalIcon.addEventListener('click', () => {
+    displayClient(digital);
+});
+contentIcon.addEventListener('click', () => {
+    displayClient(content);
+});
+socialMediaIcon.addEventListener('click', () => {
+    displayClient(sMedia);
+});
+webDevIcon.addEventListener('click', () => {
+    displayClient(webDev);
+});
+
+function displayClient(id) {
     for (let i = 0; i < clientStory.length; i++) {
         const element = clientStory[i];
         if (!element.classList.contains('inactive')) {
             element.classList.add('inactive');
         }
+        element.classList.remove('story-animate');
+        element.classList.remove('active');
     }
-    yuu.classList.remove('inactive');
-    yuu.classList.add('active');
+    id.classList.remove('inactive');
+    id.classList.add('active');
     setTimeout(() => {
-        // alert('yuuup');
-        yuu.classList.add('story-animate');
+        id.classList.add('story-animate');
     }, 500);
-});
-
-function debounce(cb, wait = 20, immediate = true) {
-    var timeout;
-    return function () {
-        var context = this,
-            args = arguments;
-        var later = function () {
-            timeout = null;
-            if (!immediate) {
-                cb.apply(context, args)
-            }
-        };
-        var callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) {
-            cb.apply(context, args);
-        }
-    }
 }
-//crazy stuff
