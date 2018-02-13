@@ -427,43 +427,18 @@ footer img {
 		grid-row-gap: 1rem;
 	}
 	.actual-process {
-		position: relative;
-		min-height: 110vh;
-		padding: unset;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-row-gap: 3rem;
+		grid-column-gap: 6rem;
 	}
 	.actual-process img {
-		margin-right: unset;
 		height: 10rem;
 	}
 	.odd,
 	.even {
-		text-align: center;
-		display: unset;
-		position: absolute;
-		bottom: 0%;
-		width: 20rem;
-	}
-	.odd-1 {
-		left: 2rem;
-		top: 0%;
-	}
-	.odd-2 {
-		left: 2rem;
-	}
-	.odd-3 {
-		top: 20rem;
-		right: 10rem;
-	}
-	.even-1 {
-		top: 20rem;
-		left: 10rem;
-	}
-	.even-2 {
-		right: 2rem;
-	}
-	.even-3 {
-		top: 0;
-		right: 3%;
+		margin-bottom: unset;
 	}
 	.members {
 		display: grid;
@@ -539,18 +514,9 @@ footer img {
 	.about > div {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
-	.services {
-		min-height: 65vh;
-	}
 	.actual-process {
-		min-height: 85vh;
-	}
-	.even-1 {
-		left: 15rem;
-	}
-	.odd-3 {
-		right: 15rem;
-		top: 19.5rem;
+		padding-left: 5rem;
+		padding-right: 5rem;
 	}
 	.member {
 		width: 24rem;
@@ -574,20 +540,10 @@ footer img {
 	}
 	.members,
 	.service-nav,
+	.actual-process,
 	nav {
 		padding-left: 10rem;
 		padding-right: 10rem;
-	}
-	.actual-process {
-		min-height: 100vh;
-		padding-left: 5rem;
-		padding-right: 5rem;
-	}
-	.even-1 {
-		left: 25rem;
-	}
-	.odd-3 {
-		right: 25rem;
 	}
 	footer {
 		padding-left: 30rem;

@@ -28,7 +28,7 @@ const navItems = document.querySelectorAll(".nav-icon");
 
 //slider, sliding to each section.
 const slider = pos => {
-	window.scroll({ top: pos.offsetTop - 20, left: 0, behavior: "smooth" });
+	window.scroll({ top: pos.offsetTop, left: 0, behavior: "smooth" });
 };
 
 navItems[0].addEventListener("click", () => {
