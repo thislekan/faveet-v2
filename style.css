@@ -252,7 +252,10 @@ section {
 .map {
 	background: gainsboro;
 }
-
+#form iframe {
+	height: 100% !important;
+	width: 100% !important;
+}
 #map iframe {
 	height: 50% !important;
 	width: 100% !important;
@@ -286,14 +289,14 @@ footer img {
 
 .sm-media {
 	display: flex;
-	flex-direction: column;
 	text-align: center;
-}
-
-.sm-media {
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	margin-top: 1rem;
+}
+#twitter-feed {
+	display: block;
+	margin-right: 5rem;
 }
 
 .address {
@@ -386,9 +389,9 @@ footer img {
 		align-items: center;
 		align-content: center;
 		min-height: 25rem;
-		grid-gap: 2rem;
-		padding-left: 3rem;
-		padding-right: 3rem;
+		grid-gap: 3rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 	.project__details {
 		text-align: left;
@@ -419,7 +422,7 @@ footer img {
 	.client__logo img {
 		height: unset;
 		max-height: 20rem;
-		box-shadow: 9px 6px 12px 1px rgba(0, 0, 0, 0.2);
+		box-shadow: 3px 5px 6px 1px rgba(0, 0, 0, 0.2);
 	}
 	.process {
 		display: grid;
@@ -451,11 +454,17 @@ footer img {
 		margin-bottom: 0;
 	}
 	.contact {
+		/* display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: baseline;
+		justify-items: center; */
+		padding-top: 5rem;
+	}
+	.contact-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: baseline;
 		justify-items: center;
-		padding-top: 5rem;
 	}
 	.contact h3 {
 		font-size: 4rem;
@@ -522,6 +531,10 @@ footer img {
 		width: 24rem;
 	}
 	footer {
+		padding-left: 20rem;
+		padding-right: 20rem;
+	}
+	.sm-media {
 		padding-left: 20rem;
 		padding-right: 20rem;
 	}
