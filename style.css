@@ -243,12 +243,13 @@ section {
 	background-color: #00aff0;
 	color: white;
 	margin-bottom: 2rem;
+	padding-top: 5rem;
+}
+.contact-grid a:hover {
+	color: white;
 }
 .contact h3 {
 	font-family: "Titillium Web";
-}
-.contact img {
-	display: none;
 }
 
 .map {
@@ -454,6 +455,12 @@ footer img {
 	.member {
 		width: 18rem;
 		margin-bottom: 0;
+	}
+	.contact-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: end;
+		justify-items: center;
 	}
 	.contact h3 {
 		font-size: 4rem;

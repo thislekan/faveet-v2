@@ -59,8 +59,9 @@ if (window.innerWidth <= 499) {
 	});
 }
 navBtn.addEventListener("click", () => {
+	let viewWidth = window.innerWidth;
 	if (mobileNav.style.left === "100%") {
-		mobileNav.style.left = "70%";
+		mobileNav.style.left = `${viewWidth - mobileNav.offsetWidth}px`;
 		navBtn.style.color = "inherit";
 	} else {
 		mobileNav.style.left = "100%";
